@@ -3,8 +3,8 @@ import streamlit as st
 st.title('Mod Whitelisting Utility')
 info_text_1 = st.write('1. execute "copyToClipboard str ("true" configClasses (configFile >> "CfgPatches") apply {configName _x});" locally in the editor')
 info_text_2 = st.write('2. CTRL+V in the following boxes (may freeze for a second)')
-input_str_1 = st.text_input("Loaded Addons no 1", value='None')
-input_str_2 = st.text_input("Loaded Addons no 2", value='None')
+input_str_1 = st.text_input("Loaded Addons no 1")
+input_str_2 = st.text_input("Loaded Addons no 2")
 
 # compare difference between two lists and output the diff
 def get_diff():
@@ -20,4 +20,4 @@ def get_diff():
 
 diff_str = get_diff()
 
-output_str = st.text(diff_str)
+output_str = st.code(diff_str)
