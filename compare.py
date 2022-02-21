@@ -37,7 +37,7 @@ text-align: center;
 }
 </style>
 <div class="footer">
-<p>Made by<a style='display: block; text-align: center;' href="https://github.com/MildlyInterested" target="_blank">Mildly Interested</a></p>
+<p>Made by <a style='display: block; text-align: center;' href="https://github.com/MildlyInterested" target="_blank">Mildly Interested</a></p>
 </div>
 """
 st.markdown(footer,unsafe_allow_html=True)
