@@ -21,3 +21,23 @@ def get_diff():
 diff_str = get_diff()
 
 output_str = st.code(diff_str)
+
+footer="""<style>
+a:link , a:visited{
+color: white;
+background-color: transparent;
+text-decoration: underline;
+}
+.footer {
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+text-align: center;
+}
+</style>
+<div class="footer">
+<p>Made by<a style='display: block; text-align: center;' href="https://github.com/MildlyInterested" target="_blank">Mildly Interested</a></p>
+</div>
+"""
+st.markdown(footer,unsafe_allow_html=True)
